@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List Project</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+    
+        <div class="bubbles">
+
+            <span style="--i:11"></span>
+            <span style="--i:12"></span>
+            <span style="--i:24"></span>
+            <span style="--i:10"></span>
+            <span style="--i:14"></span>
+            <span style="--i:23"></span>
+            <span style="--i:18"></span>
+            <span style="--i:16"></span>
+            <span style="--i:19"></span>
+            <span style="--i:20"></span>
+            <span style="--i:22"></span>
+            <span style="--i:25"></span>
+            <span style="--i:18"></span>
+            <span style="--i:21"></span>
+            <span style="--i:17"></span>
+            <span style="--i:15"></span>
+            <span style="--i:13"></span>
+            <span style="--i:19"></span>
+            <span style="--i:20"></span>
+            <span style="--i:11"></span>
+            <span style="--i:12"></span>
+            <span style="--i:24"></span>
+            <span style="--i:10"></span>
+            <span style="--i:14"></span>
+            <span style="--i:23"></span>
+            <span style="--i:18"></span>
+            <span style="--i:16"></span>
+            <span style="--i:19"></span>
+            <span style="--i:20"></span>
+            <span style="--i:22"></span>
+            <span style="--i:25"></span>
+            <span style="--i:18"></span>
+            <span style="--i:21"></span>
+            <span style="--i:17"></span>
+            <span style="--i:19"></span>
+            <span style="--i:20"></span>
+
+        </div>
+
+        <div class="box">
+
+            <h2><img src="images/image.png" alt="">to do list</h2>
+            <input type="text" placeholder="Write here..." id="inputBx">
+
+            <div class="spacing">
+        
+            <div class="inner circle">
+                <button id="clear-all">delete</button>
+                <span></span>
+                <span></span>
+            </div>   
+
+            <div class="inner circle">
+                <button id="complete-all">completed all</button>
+                <span></span>
+                <span></span>
+            </div>  
+            
+        </div>
+
+        <div>   
+
+            <div class="list-task">
+
+                <ul id="list"> 
+                </ul> 
+                
+
+            </div>
+
+
+                <!-- dropdown throgh which we can apply filters -->
+
+            <div class ="footer">
+
+                <div class="filter">
+                    
+                    <div class="dropdown">filter
+
+                        <span class="left-icon"></span>
+                        <span class="right-icon"></span>
+
+                        <div class="items">
+
+                            <a href="#" style="--i:1"><span></span>All</a>
+                            <a href="#" style="--i:2"><span></span>Completed</a>
+                            <a href="#" style="--i:3"><span></span>Uncompleted</a>
+
+                            <!--<a href="#" data-filter="all"><span></span>All</a>
+                            <a href="#" data-filter="completed"><span></span>Completed</a>
+                            <a href="#" data-filter="uncompleted"><span></span>Uncompleted</a>-->
+
+
+                        </div>
+
+                    </div>
+
+                </div>   
+
+                <!-- value showing completed task and all -->
+
+                <div class="completed-task">
+                    <p>Completed : <span id="c-count">0</span></p>
+                </div>
+
+                <div class="remaining-task">
+                    <p> <span id="total-tasks">Total Tasks : <span id="tasks-counter">0</span></span> </p> 
+                </div>
+
+             </div>
+         
+</div>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
